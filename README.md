@@ -8,3 +8,7 @@ To run the server, we run `cargo run --bin server`. To run the client, we run `c
 In terms of websocket port, we can modify the port by changing the port number in the server code. We can change the port number in the server code by changing the port number in the `Server::bind` function. We can change the port number in the client code by changing the port number in the `Client::connect` function.
 
 If we take a look at the `server.rs`, it don't need to initiate any WebSocket connection because it is a server. It just need to bind the address and listen to the incoming connection. The WebSocket connection will be initiated by the client. The server will accept the incoming connection and handle the incoming message.
+
+## Experiment 2.3: Small changes, add IP and Port
+![alt text](image-1.png)
+We just need to simply change the message broadcasted by the server to include the IP and port of the client.
